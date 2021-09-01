@@ -1,0 +1,11 @@
+---
+- name: download rtl_nic firmware
+  become: true
+  ansible.builtin.get_url:
+    url: "{{ rtl_nic__download_prefix }}/{{ item }}"
+    dest: "{{ rtl_nic__path }}/{{ item }}"
+    owner: root
+    group: root
+    mode: 0644
+  with_items: "{{ rtl_nic__firmware }}"
+  notify: update initrd
