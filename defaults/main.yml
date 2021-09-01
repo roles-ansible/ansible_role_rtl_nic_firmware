@@ -24,7 +24,8 @@ rtl_nic__firmware:
   - 'rtl_nic/rtl8168d-2.fw'
   - 'rtl_nic/rtl8168d-1.fw'
 
-rtl_nic__path: '/lib/firmware'
+rtl_nic__path_prefix: '/lib/firmware'
+rtl_nic__path_suffix: 'rtl_nic'
 
 # should we do a version check? (recomended)
 submodules_versioncheck: false
