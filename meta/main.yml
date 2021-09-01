@@ -14,5 +14,6 @@ galaxy_info:
   galaxy_tags:
     - apu
     - firmware
-    - rtl_nic
+    - rtl
+    - nic
 dependencies: []
