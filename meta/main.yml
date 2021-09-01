@@ -12,7 +12,7 @@ galaxy_info:
     - name: Ubuntu
       versions: all
   galaxy_tags:
-    - APU
+    - apu
     - firmware
     - rtl_nic
 dependencies: []
