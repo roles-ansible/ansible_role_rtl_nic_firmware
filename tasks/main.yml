@@ -1,8 +1,10 @@
 ---
-- ansible.builtin.include_tasks: versioncheck.yml
+- name: run optional versioncheck
+  ansible.builtin.include_tasks: versioncheck.yml
   when: submodules_versioncheck|bool
 
-- ansible.builtin.include_tasks: kernel_firmware_download.yml
+- name: download additional firmware on apu board
+  ansible.builtin.include_tasks: kernel_firmware_download.yml
   when:
     - ansible_board_name == 'APU'
     - ansible_product_name == 'APU'
