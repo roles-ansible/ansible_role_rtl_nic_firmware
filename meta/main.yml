@@ -1,0 +1,18 @@
+---
+galaxy_info:
+  role_name: rtl_nic_firmware
+  author: do1jlr
+  description: Ansible role to install some missing ``rtl_nic`` Firmware for APU
+  license: "MIT"
+  min_ansible_version: 2.11
+  github_branch: main
+  platforms:
+    - name: Debian
+      versions: all
+    - name: Ubuntu
+      versions: all
+  galaxy_tags:
+    - APU
+    - firmware
+    - rtl_nic
+dependencies: []

@@ -1,7 +1,7 @@
  ansible role rtl_nic_firmware
 ===============================
 
-Ansible role to deploy ``rtl_nic`` Firmware for APU.
+Ansible role to install some missing ``rtl_nic`` Firmware for APU.
 
 This role is only running at:
 ```yaml
