@@ -20,4 +20,3 @@ jobs:
         uses: ansible-actions/ansible-lint-action@v1.0.3
         with:
           target: "./"
-          collections_yml: 'requirements.yml'
