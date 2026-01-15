@@ -6,5 +6,5 @@
 - name: download additional firmware on apu board
   ansible.builtin.include_tasks: kernel_firmware_download.yml
   when:
-    - ansible_board_name == 'APU'
-    - ansible_product_name == 'APU'
+    - ansible_facts['board_name'] == 'APU'
+    - ansible_facts['product_name'] == 'APU'
